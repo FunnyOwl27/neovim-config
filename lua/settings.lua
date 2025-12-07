@@ -126,7 +126,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
-vim.keymap.set('n', '<leader>y', '"+y', { desc = 'Yank to OS register' })
+vim.keymap.set({'n', 'v'}, '<leader>y', '"+y', { desc = 'Yank to OS register' })
 vim.keymap.set('n', '<leader>p', '"+p', { desc = 'Paste from OS register' })
 
 
