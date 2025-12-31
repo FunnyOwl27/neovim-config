@@ -5,7 +5,6 @@ vim.g.have_nerd_font = true
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
-
 -- Make line numbers default
 vim.o.number = true
 -- You can also add relative line numbers, to help with jumping.
@@ -27,8 +26,19 @@ vim.o.showmode = true
 end)
 ]]--
 
+-- Use spaces for tabs
+vim.opt.expandtab = true
+-- Show existing tab with 4 spaces width
+vim.opt.tabstop = 4
+-- When indenting, use 4 spaces width
+vim.opt.shiftwidth = 4
+-- Set softtabstop to the same value as shiftwidth for consistent backspace behavior
+vim.opt.softtabstop = 4
+-- Enable smart indentation
+vim.opt.smartindent = true
+
 -- Enable break indent
---vim.o.breakindent = true
+vim.o.breakindent = false
 
 -- Save undo history
 vim.o.undofile = true
