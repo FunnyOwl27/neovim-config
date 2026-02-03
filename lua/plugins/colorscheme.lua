@@ -9,11 +9,11 @@ return {
         end,
     },
     {
-        "oskarnurm/koda.nvim",
+        "rebelot/kanagawa.nvim",
         lazy = false,    -- make sure we load this during startup if it is your main colorscheme
         priority = 1000, -- make sure to load this before all the other start plugins
         config = function()
-            -- require("koda").setup({ transparent = true })
+            require("kanagawa").setup()
             -- vim.cmd("colorscheme koda")
         end,
     },

@@ -9,6 +9,6 @@ require("settings")
 vim.lsp.enable({"lua_ls", "clangd", "gopls", "html"})
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
--- vim.o.winborder = 'rounded'
+vim.o.winborder = 'rounded'
 vim.diagnostic.config({ virtual_text = true })
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "Format current buffer"})
