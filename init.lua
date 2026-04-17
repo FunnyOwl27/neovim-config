@@ -6,7 +6,7 @@ vim.g.maplocalleader = " "
 require("config.lazy")
 require("settings")
 
-vim.lsp.enable({"lua_ls", "clangd", "gopls", "html", "pylsp"})
+vim.lsp.enable({"lua_ls", "clangd", "gopls", "html", "pylsp", "zls"})
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 vim.o.winborder = 'rounded'
